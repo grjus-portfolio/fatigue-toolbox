@@ -9,8 +9,6 @@ class FatigueStress(ABC):
     def calculate(self)->list[float]:
         pass
 
-
-
 class GerberStress(FatigueStress):
     def __init__(self, alternating_stress: list[float], mean_stress: list[float], ultimate_strength:float):
         super().__init__(alternating_stress, mean_stress)
